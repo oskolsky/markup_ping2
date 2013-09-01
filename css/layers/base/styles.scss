@@ -1,0 +1,120 @@
+@mixin border-box {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@mixin translate ($x, $y) {
+  -webkit-transform: translate($x, $y);
+     -moz-transform: translate($x, $y);
+      -ms-transform: translate($x, $y);
+       -o-transform: translate($x, $y);
+          transform: translate($x, $y);
+}
+
+
+
+//****************************************************************************************************
+//
+// .. STYLES
+//
+//****************************************************************************************************
+html {height: 100%;}
+
+button, input, select, textarea, th, td {@include border-box;}
+
+iframe, img {max-width: 100%;}
+img {height: auto !important;}
+figure > img {display: block;}
+
+main {display: block;}
+
+
+
+//****************************************************************************************************
+//
+// .. PROPERTIES
+//
+//****************************************************************************************************
+
+//
+// .. Display
+//
+.d-n  {display: none;}
+.d-i  {display: inline;}
+.d-b  {display: block;}
+.d-ib {display: inline-block;}
+
+//
+// .. Float
+//
+.f-l {float: left;}
+.f-r {float: right;}
+
+//
+// .. Overflow
+//
+.o-h  {overflow: hidden;}
+.ox-h {
+  -ms-overflow-x: hidden;
+      overflow-x: hidden;
+}
+.oy-h {
+  -ms-overflow-y: hidden;
+      overflow-y: hidden;
+}
+
+//
+// .. Position
+//
+.p-a {position: absolute;}
+.p-r {position: relative;}
+.p-f {position: fixed;}
+.p-s {position: static;}
+
+//
+// .. Visibility
+//
+.hidden  {visibility: hidden;}
+.visible {visibility: visible;}
+
+//
+// .. White-space, word-wrap
+//
+.nowrap {white-space: nowrap;}
+.break-word {word-wrap: break-word;}
+
+
+
+//****************************************************************************************************
+//
+// .. HELPERS
+//
+//****************************************************************************************************
+
+//
+// .. Clearfix
+//
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+//
+// .. Block centering
+//
+.block-c {
+  display: block !important;
+  margin-left:  auto !important;
+  margin-right: auto !important;
+}
+
+//
+// .. Container
+//
+.ctn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

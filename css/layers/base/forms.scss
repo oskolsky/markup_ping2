@@ -1,0 +1,359 @@
+@mixin form-el-border-radius ($radius: $form-el-border-radius-default) {border-radius: $radius;}
+
+
+
+//****************************************************************************************************
+//
+// .. FORM ELEMENTS
+//
+//****************************************************************************************************
+.form {}
+  
+  //
+  // .. Layout
+  //
+  .form_row {margin-bottom: $form-row-indent;}
+
+  .form_el.__block {
+    display: block;
+    width: 100%;
+  }
+
+  //
+  // .. Button, reset, submit
+  //
+  .form_button {
+    padding: $form-btn-padding;
+    background: rgb(238,238,238);
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VlZWVlZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkZGRkZGQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, rgba(238,238,238,1) 0%, rgba(221,221,221,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(238,238,238,1)), color-stop(100%,rgba(221,221,221,1)));
+    background: -webkit-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(221,221,221,1) 100%);
+    background: -o-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(221,221,221,1) 100%);
+    background: -ms-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(221,221,221,1) 100%);
+    background: linear-gradient(to bottom, rgba(238,238,238,1) 0%,rgba(221,221,221,1) 100%);
+    border: $form-el-border;
+    color: $form-el-color;
+    cursor: pointer;
+    font-size: $form-el-font-size;
+    line-height: $form-el-line-height;
+    @include border-box;
+    @include form-el-border-radius;
+  }
+  .form_button:not([disabled]):hover {box-shadow: inset 0 0 .3em rgba(0, 0, 0, .1);}
+  .form_button:not([disabled]):active {
+    background: rgb(221,221,221);
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RkZGRkZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZWVlZWUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, rgba(221,221,221,1) 0%, rgba(238,238,238,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(221,221,221,1)), color-stop(100%,rgba(238,238,238,1)));
+    background: -webkit-linear-gradient(top, rgba(221,221,221,1) 0%,rgba(238,238,238,1) 100%);
+    background: -o-linear-gradient(top, rgba(221,221,221,1) 0%,rgba(238,238,238,1) 100%);
+    background: -ms-linear-gradient(top, rgba(221,221,221,1) 0%,rgba(238,238,238,1) 100%);
+    background: linear-gradient(to bottom, rgba(221,221,221,1) 0%,rgba(238,238,238,1) 100%);
+  }
+  a.form_button {text-decoration: none;}
+
+  //
+  // .. Text, password
+  //
+  .form_text {
+    padding: $form-el-padding;
+    background: $form-el-bg;
+    border: $form-el-border;
+    color: $form-el-color;
+    font-size: $form-el-font-size;
+    line-height: $form-el-line-height;
+    @include border-box;
+    @include form-el-border-radius;
+  }
+
+  //
+  // .. Checkbox, radio
+  //
+  .form_label > .form_checkbox.__fake,
+  .form_label > .form_radio.__fake {
+    position: relative;
+    top: .1em;
+    z-index: 1000;
+    vertical-align: baseline;
+  }
+
+  //
+  // .. Checkbox
+  //
+  .form_checkbox.__fake {
+    position: relative;
+    z-index: 1000;
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    background: $form-el-bg;
+    border: $form-el-border;
+    @include border-box;
+    @include form-el-border-radius;
+  }
+  .form_checkbox.__fake[data-checked="true"]::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    content:"\f00c";
+    width: inherit;
+    height: inherit;
+    line-height: inherit;
+    margin: -1px 0 0 -1px;
+    color: fade-out($form-el-color, .3);
+    font-family: FontAwesome;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .form_checkbox.__fake[data-checked="true"][disabled]::after {opacity: .33;}
+    .form_checkbox.__real {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1002;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+
+  //
+  // .. Radio
+  //
+  .form_radio.__fake {
+    position: relative;
+    z-index: 1000;
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    background: $form-el-bg;
+    border: $form-el-border;
+    @include border-box;
+    @include form-el-border-radius(.8rem);
+  }
+  .form_radio.__fake[data-checked="true"]::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    content: "\f111";
+    width: inherit;
+    height: inherit;
+    line-height: inherit;
+    margin: -1px 0 0 -1px;
+    color: fade-out($form-el-color, .3);
+    font-family: FontAwesome;
+    font-size: .8rem;
+    text-align: center;
+  }
+  .form_radio.__fake[data-checked="true"][disabled]::after {opacity: .33;}
+    .form_radio.__real {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1002;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+
+  //
+  // .. File
+  //
+  .form_file.__fake {
+    position: relative;
+    z-index: 1000;
+    display: inline-block;
+    padding: $form-el-padding;
+    background: $form-el-bg;
+    border: $form-el-border;
+    color: $form-el-color;
+    cursor: pointer;
+    font-size: $form-el-font-size;
+    line-height: $form-el-line-height;
+    @include border-box;
+    @include form-el-border-radius;
+  }
+  .form_file.__fake::after {
+    position: absolute;
+    top: 50%;
+    right: .4rem;
+    z-index: 1001;
+    content: "\f07c";
+    width: 2.4rem;
+    height: 2rem;
+    line-height: 1.3;
+    border: $form-el-border;
+    color: #aaa;
+    font-family: FontAwesome;
+    font-size: 1.5rem;
+    text-align: center;
+    @include border-box;
+    @include form-el-border-radius;
+    @include translate(0, -50%);
+  }
+  .form_file.__fake[disabled]::after {opacity: .5;}
+  .form_file.__fake:not([disabled]):hover::after {border: .1em solid #aaa;}
+  .form_file.__fake > p {
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: 2.8rem;
+  }
+  .form_file.__real {
+    position: absolute;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+
+  //
+  // .. Label
+  //
+  .form_label {
+    color: $form-el-color;
+    font-size: $form-el-font-size;
+    line-height: $form-el-line-height;
+  }
+
+  //
+  // .. Legend
+  //
+  .form_legend {
+    color: $form-el-color;
+    font-size: $form-el-font-size * 1.33;
+    font-weight: 700;
+    line-height: $form-el-line-height * 1.33;
+  }
+
+  //
+  // .. Select
+  //
+  .form_select.__fake {
+    position: relative;
+    z-index: 1000;
+    display: inline-block;
+    padding: $form-el-padding;
+    background: $form-el-bg;
+    border: $form-el-border;
+    color: $form-el-color;
+    font-size: $form-el-font-size;
+    line-height: $form-el-line-height;
+    vertical-align: top;
+    @include border-box;
+    @include form-el-border-radius;
+  }
+  .form_select.__fake::after {
+    position: absolute;
+    top: 50%;
+    right: .4rem;
+    z-index: 1001;
+    width: 2rem;
+    height: 2rem;
+    line-height: 1.8;
+    content: "\f078";
+    color: #aaa;
+    font-family: FontAwesome;
+    font-size: 1rem;
+    text-align: center;
+    text-indent: -.1rem;
+    border: $form-el-border;
+    @include border-box;
+    @include form-el-border-radius;
+    @include translate(0, -50%);
+  }
+  .form_select.__fake > p {
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: 2.4rem;
+  }
+  .form_select.__fake[disabled]::after {opacity: .5;}
+  .form_select.__fake:not([disabled]):hover::after {border: .1em solid #aaa;}
+    .form_select.__fake > p {
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .form_select.__real {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1002;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+
+  //
+  // .. Textarea
+  //
+  .form_textarea {
+    padding: $form-el-padding;
+    border: $form-el-border;
+    color: $form-el-color;
+    font-size: $form-el-font-size;
+    @include form-el-border-radius;
+  }
+  
+  .form {
+    //
+    // .. Disabled
+    //
+    & [disabled] {
+      background: darken($form-el-bg, 5%) !important;
+      border-color: fade-out($form-el-border-color, .5) !important;
+      color: fade-out($form-el-color, .75) !important;
+      cursor: no-drop !important;
+    }
+
+    //
+    // .. Reqiured
+    //
+    & [data-required="before"],
+    & [data-required="after"] {
+      position: relative;
+      z-index: 1000;
+    }
+    & [data-required="before"]::before,
+    & [data-required="after"]::after {
+      position: absolute;
+      top: -.33rem;
+      z-index: 1001;
+      content: "\f069";
+      color: fade-out($form-el-required-color, .3);
+      font-family: FontAwesome;
+      font-size: 1.3rem;
+      line-height: 1;
+    }
+    & [data-required="before"]::before {margin-left: -1.5rem;}
+    & [data-required="after"]::after {margin-left: .25rem;}
+
+    //
+    // .. Validation
+    //
+    & [data-valid="true"] {
+      background: fade-out($form-el-valid-true-color, .9) !important;
+      border-color: fade-out($form-el-valid-true-color, .3) !important;
+      color: $form-el-valid-true-color !important;
+      &::after {
+        border-color: fade-out($form-el-valid-true-color, .6) !important;
+        color: fade-out($form-el-valid-true-color, .3) !important;
+      }
+      &:hover::after {border-color: fade-out($form-el-valid-true-color, .3) !important;}
+    }
+
+    & [data-valid="false"] {
+      background: fade-out($form-el-valid-false-color, .9) !important;
+      border-color: fade-out($form-el-valid-false-color, .3) !important;
+      color: $form-el-valid-false-color !important;
+      &::after {
+        color: fade-out($form-el-valid-false-color, .3) !important;
+        border-color: fade-out($form-el-valid-false-color, .6) !important;
+      }
+      &:hover::after {border-color: fade-out($form-el-valid-false-color, .3) !important;}
+    }
+  } // .. /.form

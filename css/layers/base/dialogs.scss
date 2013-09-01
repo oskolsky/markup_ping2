@@ -1,0 +1,27 @@
+.dialog {
+  position: relative;
+  padding: 4rem;
+  background: #fff;
+  
+  //
+  // .. Color
+  //
+  &.__gray {background: #ccc;}
+  &.__black {
+    background: #000;
+    color: #fff; 
+  }
+
+  //
+  // .. Size
+  //
+  &.__narrow {padding: 2rem;}
+  &.__wide   {padding: 8rem;}
+}
+  .dialog_close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 2000;
+    cursor: pointer;
+  }

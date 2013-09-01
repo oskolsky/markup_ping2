@@ -1,0 +1,8 @@
+{
+  "name": "ping2",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-sass" : "~0.6.0"
+  }
+}
