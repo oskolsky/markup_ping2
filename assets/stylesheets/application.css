@@ -1,0 +1,64 @@
+html {
+  font-size: 62.5%;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #000;
+  background-image: url(/assets/images/bg-index.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.5;
+  -webkit-backface-visibility: hidden;
+}
+
+/* LINKS */
+a {
+  color: #80c9ff;
+  text-decoration: none;
+}
+
+/* LAYOUTS */
+.ctn {
+  margin: 0 auto;
+  width: 980px;
+}
+
+/* HEADER */
+.header {
+
+}
+
+/* MAIN */
+.main {
+
+}
+
+/* FOOTER */
+.footer {
+  background-color: rgba(24, 24, 24, .6);
+  padding: 2rem 0;
+}
+
+/* NAV */
+.nav {
+
+}
+.nav_ls {
+
+}
+.nav_ls_i {
+  display: inline-block;
+}
+.nav_ls_i_a {
+  font-size: 1.6rem;
+  font-weight: 100;
+  text-transform: uppercase;
+}
