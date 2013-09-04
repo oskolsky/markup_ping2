@@ -13,37 +13,52 @@
     <link rel="stylesheet" href="/assets/stylesheets/reset.css">
     <link rel="stylesheet" href="/assets/stylesheets/application.css">
     <script src="/assets/javascripts/jquery-2.0.3.min.js"></script>
+    <script src="/assets/javascripts/jquery.cycle2.min.js"></script>
     <script src="/assets/javascripts/jquery.extensions.js"></script>
     <script src="/assets/javascripts/application.js"></script>
   </head>
-  <body id="page" class="page __index">
+  <body>
    
     <header id="header" class="header" role="banner">
       <div class="ctn">
 
       </div>
-    </header>
+    </header> <!-- /.header -->
 
-    <main id="main" class="main" role="main">
-      <section role="region" aria-label="">
-        <div class="ctn">
+    <main id="main" class="main cycle-slideshow" role="main" data-cycle-fx="scrollHorz" data-cycle-timeout="0" data-cycle-speed="1000" data-cycle-slides=".page" data-cycle-pager=".nav" data-cycle-pager-template="">
+      <section class="page __home" role="region" aria-label="Home" data-cycle-hash="home">
+        <div class="cnt">
 
-        </div><!-- /.ctn -->
-      </section>
-    </main>
+        </div>
+      </section> <!-- /.page.__home -->
+      <section class="page __about" role="region" aria-label="About" data-cycle-hash="about">
+        <div class="cnt">
+
+        </div>
+      </section> <!-- /.page.__about -->
+      <section class="page __terms" role="region" aria-label="Terms" data-cycle-hash="terms">
+        <div class="cnt">
+
+        </div>
+      </section> <!-- /.page.__terms -->
+      <section class="page __feedback" role="region" aria-label="Feedback" data-cycle-hash="feedback">
+        <div class="cnt">
+
+        </div>
+      </section> <!-- /.page.__feedback -->
+    </main> <!-- /.main -->
 
     <footer id="footer" class="footer" role="contentinfo">
       <div class="ctn">
         <nav class="nav" role="navigation">
-          <ul class="nav_ls">
-            <li class="nav_ls_i"><a href="#" class="nav_ls_i_a">О нас</a>
-            <li class="nav_ls_i"><a href="#" class="nav_ls_i_a">Блог</a>
-            <li class="nav_ls_i"><a href="#" class="nav_ls_i_a">Условия</a>
-            <li class="nav_ls_i"><a href="#" class="nav_ls_i_a">Обратная Связь</a>
-          </ul>
+          <a href="#" id="home" class="nav_a">Главная</a>
+          <a href="#" id="about" class="nav_a">О нас</a>
+          <a href="#" id="terms" class="nav_a">Условия</a>
+          <a href="#" id="feedback" class="nav_a">Обратная Связь</a>
+          <!--<a href="#" class="nav_a">Блог</a>-->
         </nav>
       </div>
-    </footer>
+    </footer> <!-- /.footer -->
 
   </body>
 </html>

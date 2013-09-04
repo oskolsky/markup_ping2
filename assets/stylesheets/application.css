@@ -7,15 +7,18 @@ html {
 
 body {
   background-color: #000;
-  background-image: url(/assets/images/bg-index.jpg);
+  background-image: url(/assets/images/panorama.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto 100%;
   color: #fff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.5rem;
   font-weight: 300;
+  height: 100%;
   line-height: 1.5;
+  position: relative;
+  min-width: 980px;
   -webkit-backface-visibility: hidden;
 }
 
@@ -38,26 +41,46 @@ a {
 
 /* MAIN */
 .main {
+  height: 100%;
+}
+
+/* PAGE */
+.page {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+.page.__home {
+
+}
+.page.__about {
+
+}
+.page.__terms {
+
+}
+.page.__feedback {
 
 }
 
 /* FOOTER */
 .footer {
   background-color: rgba(24, 24, 24, .6);
+  bottom: 0;
   padding: 2rem 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 9999;
 }
 
 /* NAV */
 .nav {
 
 }
-.nav_ls {
-
-}
-.nav_ls_i {
-  display: inline-block;
-}
-.nav_ls_i_a {
+.nav_a {
   font-size: 1.6rem;
   font-weight: 100;
   text-transform: uppercase;

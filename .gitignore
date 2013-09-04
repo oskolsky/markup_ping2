@@ -13,3 +13,7 @@ node_modules
 # Apache
 config.txt
 *.log
+
+# OS
+.DS_Store
+Thumbs.db
