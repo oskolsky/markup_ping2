@@ -39,7 +39,8 @@ a {
 /* LAYOUTS */
 .ctn {
   margin: 0 auto;
-  width: 980px;
+  padding: 0 6rem;
+  width: 860px;
 }
 
 /* HEADER */
@@ -72,16 +73,21 @@ a {
   min-height: 52rem;
   width: 100%;
 }
-.page > .ctn {height: 100%;}
+.page > .ctn {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+}
 
 .page.__home {}
 .page.__home > .ctn {background: red;}
 
 .page.__about {}
-.page.__about > .ctn {background: #dcdde2;}
+.page.__about > .ctn {background: #dcdde2; padding: 3rem;}
 
 .page.__terms {}
-.page.__terms > .ctn {background: #dcdde2;}
+.page.__terms > .ctn {background: #dcdde2; padding: 3rem;}
 
 .page.__feedback {}
 .page.__feedback > .ctn {background: yellow;}
