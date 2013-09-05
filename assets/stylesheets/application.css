@@ -78,7 +78,7 @@ a {
 
 .page.__home {}
 .page.__home > .ctn {}
-.page.__home > .ctn > .page_inner {background: red;}
+.page.__home > .ctn > .page_inner {background: #dcdde2;}
 
 .page.__about {}
 .page.__about > .ctn {}
@@ -90,7 +90,7 @@ a {
 
 .page.__feedback {}
 .page.__feedback > .ctn {}
-.page.__feedback > .ctn > .page_inner {background: yellow;}
+.page.__feedback > .ctn > .page_inner {background: #dcdde2;}
 
 /* FOOTER */
 .footer {
