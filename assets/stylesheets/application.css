@@ -6,11 +6,7 @@ html {
 }
 
 body {
-  background-color: #000;
-  background-image: url(/assets/images/panorama.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto 100%;
+  background: #000;
   color: #181818;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.3rem;
@@ -39,8 +35,8 @@ a {
 /* LAYOUTS */
 .ctn {
   margin: 0 auto;
-  padding: 0 6rem;
-  width: 860px;
+  /*padding: 0 6rem;*/
+  width: 980px;
 }
 
 /* HEADER */
@@ -60,18 +56,22 @@ a {
 
 /* MAIN */
 .main {
+  display: block;
   height: 100%;
 }
 
 /* PAGE */
 .page {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-  bottom: 10rem;
-  top: 14rem !important;
-  min-height: 52rem;
-  width: 100%;
+  bottom: 0;
+  top: 0;
+
+  /*-webkit-box-sizing: border-box;*/
+     /*-moz-box-sizing: border-box;*/
+          /*box-sizing: border-box;*/
+  /*bottom: 10rem;*/
+  /*min-height: 52rem;*/
+  /*right: 0;*/
+  /*top: 14rem !important;*/
 }
 .page > .ctn {
   -webkit-box-sizing: border-box;

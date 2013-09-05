@@ -6,4 +6,8 @@ $(function() {
     $('.scroll-pane').jScrollPane();
   });
 
+  $(document).ready(function () {
+    $("#background-image").fullscreenBackground();
+  });
+
 });
