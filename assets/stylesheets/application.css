@@ -85,11 +85,11 @@ a {
   position: relative;
 }
 .page > .ctn > .page_inner {
-  bottom: 10rem;
+  bottom: 11rem;
   left: 0;
   position: absolute;
   right: 0;
-  top: 14rem;
+  top: 15rem;
 }
 
 .page.__home {}
