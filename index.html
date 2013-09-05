@@ -27,19 +27,20 @@
 
     <header id="header" class="header" role="banner">
       <div class="ctn">
-      <a href="/"><img src="/assets/images/logo.png" alt="Ping" width="142" height="58" class="logo"></a>
+        <a href="/"><img src="/assets/images/logo.png" alt="Ping" width="142" height="58" class="logo"></a>
+        <h1 class="header_t"></h1>
       </div>
     </header> <!-- /.header -->
 
-    <main class="main cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-timeout="0" data-cycle-speed="500" data-cycle-center-horz="true" data-cycle-center-vert="true" data-cycle-slides=".page" data-cycle-pager=".nav" data-cycle-pager-template="">
+    <main class="main slider">
 
-      <section class="page __home" role="region" aria-label="Home" data-cycle-hash="Home">
+      <section class="page __home" role="region" aria-label="Home" data-cycle-hash="Home" data-header="">
         <div class="ctn">
           <div class="page_inner">1</div>
         </div>
       </section>
 
-      <section class="page __about" role="region" aria-label="About" data-cycle-hash="About">
+      <section class="page __about" role="region" aria-label="About" data-cycle-hash="About" data-header="О нас">
         <div class="ctn">
           <div class="page_inner">
             <div class="scroll-pane">
@@ -74,7 +75,7 @@
         </div>
       </section>
 
-      <section class="page __terms" role="region" aria-label="Terms" data-cycle-hash="Terms">
+      <section class="page __terms" role="region" aria-label="Terms" data-cycle-hash="Terms" data-header="Условия">
         <div class="ctn">
           <div class="page_inner">
             <div class="scroll-pane">
@@ -83,7 +84,7 @@
                   <li>
                     <p>Использование бесплатного сервиса Ping App</p>
                     <p>Все пользователи бесплатного сервиса Ping App согласны на&nbsp;следующие условия.</p>
-                    <p>Пользователи сервиса Free App, а&nbsp;так&nbsp;же любая сторона, принимающая условия данного соглашения, здесь и&nbsp;далее обозначается как &laquo;Вы&raquo; или &laquo;Ваш&raquo; или другим соответствующим местоимением. Ping App здесь и&nbsp;далее обозначается, как &laquo;Мы&raquo; или &laquo;Наш&raquo; или другим подходящим местоимением, а&nbsp;так&nbsp;же как &laquo;сервис&raquo; или &laquo;услуги&raquo; или &laquo;Приложение&raquo; или любым другим соответствующим словом или словосочетанием.</p>
+                    <p>Пользователи сервиса Ping App, а&nbsp;так&nbsp;же любая сторона, принимающая условия данного соглашения, здесь и&nbsp;далее обозначается как &laquo;Вы&raquo; или &laquo;Ваш&raquo; или другим соответствующим местоимением. Ping App здесь и&nbsp;далее обозначается, как &laquo;Мы&raquo; или &laquo;Наш&raquo; или другим подходящим местоимением, а&nbsp;так&nbsp;же как &laquo;сервис&raquo; или &laquo;услуги&raquo; или &laquo;Приложение&raquo; или любым другим соответствующим словом или словосочетанием.</p>
                   </li>
                   <li>
                     <p>Обязанности пользователей</p>
@@ -158,7 +159,7 @@
         </div>
       </section>
 
-      <section class="page __feedback" role="region" aria-label="Feedback" data-cycle-hash="Feedback">
+      <section class="page __feedback" role="region" aria-label="Feedback" data-cycle-hash="Feedback" data-header="Обратная связь">
         <div class="ctn">
           <div class="page_inner">4</div>
         </div>
@@ -169,10 +170,10 @@
     <footer id="footer" class="footer" role="contentinfo">
       <div class="ctn">
         <nav class="nav" role="navigation">
-          <a href="#" id="home" class="nav_a">Главная</a>
-          <a href="#" id="about" class="nav_a">О нас</a>
-          <a href="#" id="terms" class="nav_a">Условия</a>
-          <a href="#" id="feedback" class="nav_a">Обратная Связь</a>
+          <a href="#" id="home" class="nav_a" data-header="">Главная</a>
+          <a href="#" id="about" class="nav_a" data-header="О нас">О нас</a>
+          <a href="#" id="terms" class="nav_a" data-header="Условия">Условия</a>
+          <a href="#" id="feedback" class="nav_a" data-header="Обратная Связь">Обратная Связь</a>
           <!--<a href="#" class="nav_a">Блог</a>-->
         </nav>
       </div>
