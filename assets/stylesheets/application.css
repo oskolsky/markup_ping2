@@ -7,14 +7,14 @@ html {
 
 body {
   background: #000;
-  color: #181818;
+  color: #0b0b0b;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.3rem;
   font-weight: 300;
   height: 100%;
   line-height: 1.2;
   min-height: 760px;
-  min-width: 980px;
+  min-width: 1000px;
   position: relative;
   -webkit-backface-visibility: hidden;
 }
@@ -34,8 +34,11 @@ a {
 
 /* LAYOUTS */
 .ctn {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0 auto;
-  width: 860px;
+  width: 980px;
 }
 
 /* HEADER */
@@ -60,7 +63,7 @@ a {
 }
 
   .logo {
-    left: 0;
+    left: 6rem;
     position: absolute;
     top: 0;
     vertical-align: top;
@@ -91,18 +94,18 @@ a {
 
 .page.__home {}
 .page.__home > .ctn {}
-.page.__home > .ctn > .page_inner {background: #dcdde2;}
+.page.__home > .ctn > .page_inner {}
 
 .page.__about {}
-.page.__about > .ctn {}
-.page.__about > .ctn > .page_inner {background: #dcdde2; padding: 3rem;}
+.page.__about > .ctn {width: 860px;}
+.page.__about > .ctn > .page_inner {background: #fff; padding: 3rem; opacity: .85;}
 
 .page.__terms {}
-.page.__terms > .ctn {}
-.page.__terms > .ctn > .page_inner {background: #dcdde2; padding: 3rem;}
+.page.__terms > .ctn {width: 860px;}
+.page.__terms > .ctn > .page_inner {background: #fff; padding: 3rem; opacity: .85;}
 
 .page.__feedback {}
-.page.__feedback > .ctn {}
+.page.__feedback > .ctn {width: 860px;}
 .page.__feedback > .ctn > .page_inner {background: #dcdde2;}
 
 /* FOOTER */
@@ -115,6 +118,9 @@ a {
   right: 0;
   z-index: 9999;
 }
+.footer > .ctn {
+  position: relative;
+}
 
 /* NAV */
 .nav {
@@ -123,9 +129,26 @@ a {
 .nav_a {
   font-size: 1.6rem;
   font-weight: 300;
-  margin: 0 6rem;
+  margin: 0 6.5rem;
   text-transform: uppercase;
 }
+.nav_a:hover,
 .nav_a.cycle-pager-active {
   color: #fff;
+}
+
+.nav_a.__home {
+  left: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+}
+.nav_a.__home > img {
+  background: url(/assets/images/home.png) 0 0 no-repeat;
+  height: 20px;
+  width: 22px;
+}
+.nav_a.__home:hover > img,
+.nav_a.__home.cycle-pager-active > img {
+  background-position: -22px 0;
 }
