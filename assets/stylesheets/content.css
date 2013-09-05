@@ -4,14 +4,21 @@
   font-size: 1.3rem;
 }
 
-.cnt blockquote,
-.cnt code,
-.cnt dl,
-.cnt ol,
-.cnt ul,
-.cnt img,
-.cnt p,
-.cnt table {margin-bottom: 1rem;}
+.cnt blockquote:not(:last-child),
+.cnt h1:not(:last-child),
+.cnt h2:not(:last-child),
+.cnt h3:not(:last-child),
+.cnt h4:not(:last-child),
+.cnt h5:not(:last-child),
+.cnt h6:not(:last-child),
+.cnt dl:not(:last-child),
+.cnt ol:not(:last-child),
+.cnt ul:not(:last-child),
+.cnt figure:not(:last-child),
+.cnt img:not(:last-child),
+.cnt p:not(:last-child),
+.cnt pre:not(:last-child),
+.cnt table:not(:last-child) {margin-bottom: 1rem;}
 
 .cnt ul li {
   list-style-type: disc;

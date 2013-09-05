@@ -10,4 +10,8 @@ $(function() {
     $("#background-image").fullscreenBackground();
   });
 
+  $(window).resize(function() {
+    $('.scroll-pane').jScrollPane();
+  });
+
 });
