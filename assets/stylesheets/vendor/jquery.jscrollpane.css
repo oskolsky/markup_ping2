@@ -13,6 +13,7 @@
 
 .jspPane
 {
+  width: 772px !important;
   position: absolute;
 }
 
@@ -21,7 +22,7 @@
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 16px;
+	width: 4px;
 	height: 100%;
 	background: red;
 }
@@ -55,13 +56,13 @@
 
 .jspTrack
 {
-	background: #dde;
+	background: #ebecef;
 	position: relative;
 }
 
 .jspDrag
 {
-	background: #bbd;
+	background: #ff3d3d;
 	position: relative;
 	top: 0;
 	left: 0;

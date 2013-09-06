@@ -19,6 +19,17 @@ body {
   -webkit-backface-visibility: hidden;
 }
 
+/* HELPERS */
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+.clearfix:after {clear: both;}
+
+.f-l {float: left;}
+.f-r {float: right;}
+
 /* LINKS */
 a {
   color: #80c9ff;
@@ -50,7 +61,7 @@ a {
   position: absolute;
   right: 0;
   text-align: center;
-  z-index: 9999;
+  z-index: 9998;
 }
 .header > .ctn {
   position: relative;
@@ -107,6 +118,28 @@ a {
 .page.__feedback {}
 .page.__feedback > .ctn {width: 860px;}
 .page.__feedback > .ctn > .page_inner {background: #dcdde2;}
+
+/* INDEX */
+.index {
+
+}
+.index_cnt {
+  background: yellow;
+  float: left;
+  width: 604px;
+}
+.index_lopata {
+  background: blue;
+  float: right;
+  position: relative;
+  width: 376px;
+}
+.index_lopata_iphone {
+  /*position: absolute;*/
+  /*top: -125px;*/
+  /*right: -55px;*/
+  /*z-index: 9999;*/
+}
 
 /* FOOTER */
 .footer {
