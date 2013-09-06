@@ -13,7 +13,7 @@ body {
   font-weight: 300;
   height: 100%;
   line-height: 1.2;
-  min-height: 760px;
+  min-height: 600px;
   min-width: 1000px;
   position: relative;
   -webkit-backface-visibility: hidden;
@@ -129,7 +129,7 @@ a {
 .nav_a {
   font-size: 1.6rem;
   font-weight: 300;
-  margin: 0 6.5rem;
+  margin: 0 5rem;
   text-transform: uppercase;
 }
 .nav_a:hover,
@@ -152,3 +152,26 @@ a {
 .nav_a.__home.cycle-pager-active > img {
   background-position: -22px 0;
 }
+
+/* SOCIAL NAV */
+.social {
+  position: absolute;
+  right: 0;
+  top: -.5rem;
+}
+.social_i {
+  margin-left: 1.3rem;
+}
+
+/* ICONS */
+.ico {
+  display: inline-block;
+}
+.ico.__30 {
+  background-image: url(/assets/images/ico-30.png);
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+}
+.ico.__30.__fb {background-position: 0 0;}
+.ico.__30.__tw {background-position: -30px 0;}
