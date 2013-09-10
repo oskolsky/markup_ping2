@@ -19,6 +19,8 @@ body {
   -webkit-backface-visibility: hidden;
 }
 
+b {font-weight: 700;}
+
 /* HELPERS */
 .tx.__center {
   text-align: center;
@@ -168,7 +170,7 @@ a {
   width: 21px;
 }
 .index_cnt > ul > li:not(:last-child) {margin-bottom: 2.5rem;}
-.index_cnt > ul > li > strong {
+.index_cnt > ul > li > b {
   color: #80c9ff;
   font-weight: bold;
 }
