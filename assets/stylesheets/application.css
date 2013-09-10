@@ -13,7 +13,7 @@ body {
   font-weight: 300;
   height: 100%;
   line-height: 1.2;
-  min-height: 600px;
+  min-height: 750px;
   min-width: 1000px;
   position: relative;
   -webkit-backface-visibility: hidden;
@@ -57,7 +57,7 @@ a {
   left: 0;
   height: 5.8rem;
   line-height: 5.8rem;
-  margin-top: 6rem;
+  margin-top: 2.6rem;
   position: absolute;
   right: 0;
   text-align: center;
@@ -100,7 +100,7 @@ a {
   left: 0;
   position: absolute;
   right: 0;
-  top: 15rem;
+  top: 11rem;
 }
 
 .page.__home {}
@@ -123,22 +123,70 @@ a {
 .index {
 
 }
-.index_cnt {
-  background: yellow;
-  float: left;
-  width: 604px;
+.index_side {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform:    translate(0, -50%);
+  -ms-transform:     translate(0, -50%);
+  -o-transform:      translate(0, -50%);
+  transform:         translate(0, -50%);
 }
-.index_lopata {
-  background: blue;
-  float: right;
-  position: relative;
+.index_side.__left {
+  left: 0;
+  width: 550px;
+}
+.index_side.__right {
+  right: 0;
   width: 376px;
 }
-.index_lopata_iphone {
-  /*position: absolute;*/
-  /*top: -125px;*/
+
+/* Content */
+.index_cnt {
+  margin-bottom: 5rem;
+}
+.index_cnt > ul  {
+  font-size: 2.2rem;
+  margin-left: 6rem;
+}
+.index_cnt > ul > li {
+  color: #fff;
+  list-style: none;
+  position: relative;
+  text-shadow: .2rem .2rem .4rem #000;
+}
+.index_cnt > ul > li::before {
+  content: '';
+  background: url(/assets/images/list.png) 0 0 no-repeat;
+  height: 38px;
+  left: -6rem;
+  margin-top: -19px;
+  position: absolute;
+  top: 50%;
+  width: 21px;
+}
+.index_cnt > ul > li:not(:last-child) {margin-bottom: 4.5rem;}
+.index_cnt > ul > li > strong {
+  color: #80c9ff;
+  font-weight: bold;
+}
+
+/* Apps links */
+.index_apps {
+  margin-bottom: 2.5rem;
+  margin-left: 6rem;
+}
+.index_apps_a {
+  margin-right: 5rem;
+}
+.index_apps_a > img {vertical-align: top;}
+
+/* iPhone */
+.index_iphone {
+  bottom: -50px;
+  position: absolute;
   /*right: -55px;*/
-  /*z-index: 9999;*/
+  right: 0;
 }
 
 /* FOOTER */

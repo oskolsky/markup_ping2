@@ -18,6 +18,7 @@ $(function() {
   mainSlide.on('cycle-after', function(event, optionHash) {
     $('.scroll-pane').jScrollPane();
     $('.header_t').text(optionHash.header).fadeIn();
+    $('.index_side').removeAttr('style').resizeToMaxHeight();
   });
 
   var defaultHdr = $('.cycle-pager-active').data('header');
@@ -32,5 +33,7 @@ $(function() {
   $(window).resize(function() {
     $('.scroll-pane').jScrollPane();
   });
+
+  $('.index_side').removeAttr('style').resizeToMaxHeight();
 
 });
