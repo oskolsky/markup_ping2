@@ -1,5 +1,9 @@
 $(function() {
 
+  if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+    window.location = "https://itunes.apple.com/us/app/ping-app/id694666193?l=ru&ls=1&mt=8";
+  }
+
   var mainSlide = $('.slider').cycle({
     fx: 'scrollHorz',
     timeout: 0,
