@@ -142,6 +142,7 @@ a {
 .index_t {
   color: #fff;
   font-size: 2.8rem;
+  font-weight: 300;
   margin-bottom: 2.5rem;
   margin-left: 6rem;
 }
@@ -152,6 +153,7 @@ a {
 }
 .index_cnt > ul  {
   font-size: 2.2rem;
+  font-weight: 300;
   margin-left: 6rem;
 }
 .index_cnt > ul > li {
@@ -171,9 +173,8 @@ a {
   width: 21px;
 }
 .index_cnt > ul > li:not(:last-child) {margin-bottom: 2.5rem;}
-.index_cnt > ul > li > b {
+.index_cnt > ul > li > span {
   color: #80c9ff;
-  font-weight: bold;
 }
 
 /* Apps links */
