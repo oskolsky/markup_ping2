@@ -1,19 +1,29 @@
-# Grunt
-node_modules
+# Log file
+*.log
 
-# SASS
-.sass-cache
+# Eclipse
+.project
+
+# Mac
+.DS_Store
 
 # RubyMine
 .idea
 
+# Sword
+sword.exe
+
 # Sublime Text
 *.sublime-*
 
-# Apache
-config.txt
+# System
 *.log
 
-# OS
-.DS_Store
+# Windows
 Thumbs.db
+
+#exe
+*.exe
+
+#Sass
+.sass-cache

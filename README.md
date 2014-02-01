@@ -1,10 +1,9 @@
-Ping
-========
+# Ping v2
 
-Верстка проекта "Ping"
+Version: 2.0
 
-| Страница                      | Ссылка                                         |
-|-------------------------------|------------------------------------------------|
-| Главная                       | http://ping2.oskolsky.com/index.html           |
-| Условия                       | http://ping2.oskolsky.com/terms.html           |
-| Контакты                      | http://ping2.oskolsky.com/contact.html         |
+Updated: 1/02/2014
+
+## Credits
+
+* @oskolsky — Senior Frontend Developer
